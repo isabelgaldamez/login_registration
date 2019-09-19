@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .container{
+                width: 970px;
+                margin: 0px auto;
+                padding: 10px 10px;
+            }
+            h3{
+                color:green
+            }
+            .success_logged_user{
+                display: inline-block;
+                vertical-align: top;
+            }
+            a{
+                margin-top: 30px;
+                margin-left: 200px;
+                font-size: 20px;
+                display: inline-block;
+                vertical-align: top;
+            }
+        </style>
+        <title>Main</title>
+    </head>
+    <body>
+        <div class='container'>
+            <div class='success_logged_user'>
+            <h1>Success! Welcome, {{user_info.first_name}}!</h1>
+            <h3>Successfully registered or logged in!</h3>
+            </div>
+            <a href='/clear_session'>Log Out</a>
+        </div>
+        
+    </body>
+</html>
